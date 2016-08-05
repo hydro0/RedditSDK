@@ -7,9 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6F21505B1D5360C0004C4E7D /* RedditSDK.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6F21505A1D5360C0004C4E7D /* RedditSDK.h */; };
-		6F21505D1D5360C0004C4E7D /* RedditSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F21505C1D5360C0004C4E7D /* RedditSDK.m */; };
+		6F21505B1D5360C0004C4E7D /* RSInstance.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6F21505A1D5360C0004C4E7D /* RSInstance.h */; };
+		6F21505D1D5360C0004C4E7D /* RSInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F21505C1D5360C0004C4E7D /* RSInstance.m */; };
 		6F2150631D5360C0004C4E7D /* libRedditSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F2150571D5360C0004C4E7D /* libRedditSDK.a */; };
+		6F3019CF1D5398680077E0B4 /* RSLinksFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F3019CE1D5398680077E0B4 /* RSLinksFetcher.m */; };
+		6F3019D41D539A750077E0B4 /* RSSearchConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F3019D31D539A750077E0B4 /* RSSearchConfiguration.m */; };
+		6F3019DD1D53C16B0077E0B4 /* RSRuntimeLinksCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F3019DC1D53C16B0077E0B4 /* RSRuntimeLinksCache.m */; };
+		6F3019E41D53C1F00077E0B4 /* RSLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F3019E31D53C1F00077E0B4 /* RSLink.m */; };
+		6F3019ED1D53CADF0077E0B4 /* RSConfigurationValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F3019EC1D53CADF0077E0B4 /* RSConfigurationValidator.m */; };
+		6F3019F11D53CB530077E0B4 /* RSApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F3019F01D53CB530077E0B4 /* RSApiClient.m */; };
+		6F3019F41D548AF30077E0B4 /* RSLinksNetworkFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F3019F31D548AF30077E0B4 /* RSLinksNetworkFetcher.m */; };
+		6F301A001D549DAC0077E0B4 /* RSStandartLinksSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F3019FF1D549DAC0077E0B4 /* RSStandartLinksSerializer.m */; };
+		6F301A071D549F090077E0B4 /* NSArray+Map.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F301A061D549F090077E0B4 /* NSArray+Map.m */; };
+		6F301A0B1D54A5630077E0B4 /* RSRedditURLProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F301A0A1D54A5630077E0B4 /* RSRedditURLProvider.m */; };
+		6F6674341D54C48600066F93 /* RSURLProviderFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6674331D54C48600066F93 /* RSURLProviderFactory.m */; };
+		6F6674371D54C51F00066F93 /* RSSerializerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6674361D54C51F00066F93 /* RSSerializerFactory.m */; };
+		6F66743A1D54C6D600066F93 /* RSCacheFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6674391D54C6D600066F93 /* RSCacheFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +42,7 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				6F21505B1D5360C0004C4E7D /* RedditSDK.h in CopyFiles */,
+				6F21505B1D5360C0004C4E7D /* RSInstance.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,10 +50,38 @@
 
 /* Begin PBXFileReference section */
 		6F2150571D5360C0004C4E7D /* libRedditSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRedditSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		6F21505A1D5360C0004C4E7D /* RedditSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RedditSDK.h; sourceTree = "<group>"; };
-		6F21505C1D5360C0004C4E7D /* RedditSDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RedditSDK.m; sourceTree = "<group>"; };
+		6F21505A1D5360C0004C4E7D /* RSInstance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSInstance.h; sourceTree = "<group>"; };
+		6F21505C1D5360C0004C4E7D /* RSInstance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSInstance.m; sourceTree = "<group>"; };
 		6F2150621D5360C0004C4E7D /* RedditSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RedditSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F2150681D5360C0004C4E7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F3019C91D53963F0077E0B4 /* RSSearchConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSearchConfiguration.h; sourceTree = "<group>"; };
+		6F3019CD1D5398680077E0B4 /* RSLinksFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSLinksFetcher.h; sourceTree = "<group>"; };
+		6F3019CE1D5398680077E0B4 /* RSLinksFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSLinksFetcher.m; sourceTree = "<group>"; };
+		6F3019D31D539A750077E0B4 /* RSSearchConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSearchConfiguration.m; sourceTree = "<group>"; };
+		6F3019DB1D53C16B0077E0B4 /* RSRuntimeLinksCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSRuntimeLinksCache.h; sourceTree = "<group>"; };
+		6F3019DC1D53C16B0077E0B4 /* RSRuntimeLinksCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSRuntimeLinksCache.m; sourceTree = "<group>"; };
+		6F3019E21D53C1F00077E0B4 /* RSLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSLink.h; sourceTree = "<group>"; };
+		6F3019E31D53C1F00077E0B4 /* RSLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSLink.m; sourceTree = "<group>"; };
+		6F3019EB1D53CADF0077E0B4 /* RSConfigurationValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSConfigurationValidator.h; sourceTree = "<group>"; };
+		6F3019EC1D53CADF0077E0B4 /* RSConfigurationValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSConfigurationValidator.m; sourceTree = "<group>"; };
+		6F3019EF1D53CB530077E0B4 /* RSApiClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSApiClient.h; sourceTree = "<group>"; };
+		6F3019F01D53CB530077E0B4 /* RSApiClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSApiClient.m; sourceTree = "<group>"; };
+		6F3019F21D548AF30077E0B4 /* RSLinksNetworkFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSLinksNetworkFetcher.h; sourceTree = "<group>"; };
+		6F3019F31D548AF30077E0B4 /* RSLinksNetworkFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSLinksNetworkFetcher.m; sourceTree = "<group>"; };
+		6F3019FC1D549D040077E0B4 /* RSProtocols.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSProtocols.h; sourceTree = "<group>"; };
+		6F3019FE1D549DAC0077E0B4 /* RSStandartLinksSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSStandartLinksSerializer.h; sourceTree = "<group>"; };
+		6F3019FF1D549DAC0077E0B4 /* RSStandartLinksSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSStandartLinksSerializer.m; sourceTree = "<group>"; };
+		6F301A051D549F090077E0B4 /* NSArray+Map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Map.h"; sourceTree = "<group>"; };
+		6F301A061D549F090077E0B4 /* NSArray+Map.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Map.m"; sourceTree = "<group>"; };
+		6F301A091D54A5630077E0B4 /* RSRedditURLProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSRedditURLProvider.h; sourceTree = "<group>"; };
+		6F301A0A1D54A5630077E0B4 /* RSRedditURLProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSRedditURLProvider.m; sourceTree = "<group>"; };
+		6F66742E1D54B43500066F93 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		6F6674321D54C48600066F93 /* RSURLProviderFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSURLProviderFactory.h; sourceTree = "<group>"; };
+		6F6674331D54C48600066F93 /* RSURLProviderFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSURLProviderFactory.m; sourceTree = "<group>"; };
+		6F6674351D54C51F00066F93 /* RSSerializerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSerializerFactory.h; sourceTree = "<group>"; };
+		6F6674361D54C51F00066F93 /* RSSerializerFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSerializerFactory.m; sourceTree = "<group>"; };
+		6F6674381D54C6D600066F93 /* RSCacheFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCacheFactory.h; sourceTree = "<group>"; };
+		6F6674391D54C6D600066F93 /* RSCacheFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCacheFactory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +106,7 @@
 		6F21504E1D5360C0004C4E7D = {
 			isa = PBXGroup;
 			children = (
+				6F66742E1D54B43500066F93 /* Podfile */,
 				6F2150591D5360C0004C4E7D /* RedditSDK */,
 				6F2150661D5360C0004C4E7D /* RedditSDKTests */,
 				6F2150581D5360C0004C4E7D /* Products */,
@@ -83,8 +125,12 @@
 		6F2150591D5360C0004C4E7D /* RedditSDK */ = {
 			isa = PBXGroup;
 			children = (
-				6F21505A1D5360C0004C4E7D /* RedditSDK.h */,
-				6F21505C1D5360C0004C4E7D /* RedditSDK.m */,
+				6F301A011D549E620077E0B4 /* categories */,
+				6F3019E11D53C1E20077E0B4 /* model */,
+				6F3019D51D539CA00077E0B4 /* configuration */,
+				6F3019CC1D53984E0077E0B4 /* internal */,
+				6F21505A1D5360C0004C4E7D /* RSInstance.h */,
+				6F21505C1D5360C0004C4E7D /* RSInstance.m */,
 			);
 			path = RedditSDK;
 			sourceTree = "<group>";
@@ -103,6 +149,101 @@
 				6F2150681D5360C0004C4E7D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6F3019CC1D53984E0077E0B4 /* internal */ = {
+			isa = PBXGroup;
+			children = (
+				6F3019EE1D53CB450077E0B4 /* network */,
+				6F3019DA1D53C1540077E0B4 /* cache */,
+				6F3019CD1D5398680077E0B4 /* RSLinksFetcher.h */,
+				6F3019CE1D5398680077E0B4 /* RSLinksFetcher.m */,
+				6F3019FC1D549D040077E0B4 /* RSProtocols.h */,
+			);
+			name = internal;
+			sourceTree = "<group>";
+		};
+		6F3019D51D539CA00077E0B4 /* configuration */ = {
+			isa = PBXGroup;
+			children = (
+				6F3019C91D53963F0077E0B4 /* RSSearchConfiguration.h */,
+				6F3019D31D539A750077E0B4 /* RSSearchConfiguration.m */,
+				6F3019EB1D53CADF0077E0B4 /* RSConfigurationValidator.h */,
+				6F3019EC1D53CADF0077E0B4 /* RSConfigurationValidator.m */,
+			);
+			name = configuration;
+			sourceTree = "<group>";
+		};
+		6F3019DA1D53C1540077E0B4 /* cache */ = {
+			isa = PBXGroup;
+			children = (
+				6F66743E1D54C8CD00066F93 /* runtime */,
+				6F6674381D54C6D600066F93 /* RSCacheFactory.h */,
+				6F6674391D54C6D600066F93 /* RSCacheFactory.m */,
+			);
+			name = cache;
+			sourceTree = "<group>";
+		};
+		6F3019E11D53C1E20077E0B4 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				6F3019E21D53C1F00077E0B4 /* RSLink.h */,
+				6F3019E31D53C1F00077E0B4 /* RSLink.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		6F3019EE1D53CB450077E0B4 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				6F301A081D54A5340077E0B4 /* url */,
+				6F3019F81D5496520077E0B4 /* serializers */,
+				6F3019EF1D53CB530077E0B4 /* RSApiClient.h */,
+				6F3019F01D53CB530077E0B4 /* RSApiClient.m */,
+				6F3019F21D548AF30077E0B4 /* RSLinksNetworkFetcher.h */,
+				6F3019F31D548AF30077E0B4 /* RSLinksNetworkFetcher.m */,
+			);
+			name = network;
+			sourceTree = "<group>";
+		};
+		6F3019F81D5496520077E0B4 /* serializers */ = {
+			isa = PBXGroup;
+			children = (
+				6F3019FE1D549DAC0077E0B4 /* RSStandartLinksSerializer.h */,
+				6F3019FF1D549DAC0077E0B4 /* RSStandartLinksSerializer.m */,
+				6F6674351D54C51F00066F93 /* RSSerializerFactory.h */,
+				6F6674361D54C51F00066F93 /* RSSerializerFactory.m */,
+			);
+			name = serializers;
+			sourceTree = "<group>";
+		};
+		6F301A011D549E620077E0B4 /* categories */ = {
+			isa = PBXGroup;
+			children = (
+				6F301A051D549F090077E0B4 /* NSArray+Map.h */,
+				6F301A061D549F090077E0B4 /* NSArray+Map.m */,
+			);
+			name = categories;
+			sourceTree = "<group>";
+		};
+		6F301A081D54A5340077E0B4 /* url */ = {
+			isa = PBXGroup;
+			children = (
+				6F301A091D54A5630077E0B4 /* RSRedditURLProvider.h */,
+				6F301A0A1D54A5630077E0B4 /* RSRedditURLProvider.m */,
+				6F6674321D54C48600066F93 /* RSURLProviderFactory.h */,
+				6F6674331D54C48600066F93 /* RSURLProviderFactory.m */,
+			);
+			name = url;
+			sourceTree = "<group>";
+		};
+		6F66743E1D54C8CD00066F93 /* runtime */ = {
+			isa = PBXGroup;
+			children = (
+				6F3019DB1D53C16B0077E0B4 /* RSRuntimeLinksCache.h */,
+				6F3019DC1D53C16B0077E0B4 /* RSRuntimeLinksCache.m */,
+			);
+			name = runtime;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,7 +290,7 @@
 		6F21504F1D5360C0004C4E7D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0620;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Orest Savchak";
 				TargetAttributes = {
 					6F2150561D5360C0004C4E7D = {
@@ -193,7 +334,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F21505D1D5360C0004C4E7D /* RedditSDK.m in Sources */,
+				6F3019ED1D53CADF0077E0B4 /* RSConfigurationValidator.m in Sources */,
+				6F21505D1D5360C0004C4E7D /* RSInstance.m in Sources */,
+				6F301A0B1D54A5630077E0B4 /* RSRedditURLProvider.m in Sources */,
+				6F3019DD1D53C16B0077E0B4 /* RSRuntimeLinksCache.m in Sources */,
+				6F3019F41D548AF30077E0B4 /* RSLinksNetworkFetcher.m in Sources */,
+				6F3019CF1D5398680077E0B4 /* RSLinksFetcher.m in Sources */,
+				6F66743A1D54C6D600066F93 /* RSCacheFactory.m in Sources */,
+				6F301A001D549DAC0077E0B4 /* RSStandartLinksSerializer.m in Sources */,
+				6F6674371D54C51F00066F93 /* RSSerializerFactory.m in Sources */,
+				6F3019D41D539A750077E0B4 /* RSSearchConfiguration.m in Sources */,
+				6F6674341D54C48600066F93 /* RSURLProviderFactory.m in Sources */,
+				6F301A071D549F090077E0B4 /* NSArray+Map.m in Sources */,
+				6F3019E41D53C1F00077E0B4 /* RSLink.m in Sources */,
+				6F3019F11D53CB530077E0B4 /* RSApiClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +388,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -320,6 +475,7 @@
 				);
 				INFOPLIST_FILE = RedditSDKTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.coddingchallenge.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -333,6 +489,7 @@
 				);
 				INFOPLIST_FILE = RedditSDKTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.coddingchallenge.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -356,6 +513,7 @@
 				6F21506D1D5360C0004C4E7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6F21506E1D5360C0004C4E7D /* Build configuration list for PBXNativeTarget "RedditSDKTests" */ = {
 			isa = XCConfigurationList;
@@ -364,6 +522,7 @@
 				6F2150701D5360C0004C4E7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
