@@ -125,12 +125,12 @@
 		6F21504E1D5360C0004C4E7D = {
 			isa = PBXGroup;
 			children = (
-				6F66743F1D54EA5500066F93 /* RedditSDK.podspec */,
+				305C12873CD24ADFBA321FAA /* Frameworks */,
+				CB0F387CCA5C45FE25513552 /* Pods */,
+				6F2150581D5360C0004C4E7D /* Products */,
 				6F2150591D5360C0004C4E7D /* RedditSDK */,
 				6F2150661D5360C0004C4E7D /* RedditSDKTests */,
-				6F2150581D5360C0004C4E7D /* Products */,
-				CB0F387CCA5C45FE25513552 /* Pods */,
-				305C12873CD24ADFBA321FAA /* Frameworks */,
+				6F66743F1D54EA5500066F93 /* RedditSDK.podspec */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,9 +147,9 @@
 			isa = PBXGroup;
 			children = (
 				6F301A011D549E620077E0B4 /* categories */,
-				6F3019E11D53C1E20077E0B4 /* model */,
 				6F3019D51D539CA00077E0B4 /* configuration */,
 				6F3019CC1D53984E0077E0B4 /* internal */,
+				6F3019E11D53C1E20077E0B4 /* model */,
 				6F21505A1D5360C0004C4E7D /* RSInstance.h */,
 				6F21505C1D5360C0004C4E7D /* RSInstance.m */,
 			);
@@ -169,30 +169,30 @@
 			children = (
 				6F2150681D5360C0004C4E7D /* Info.plist */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		6F3019CC1D53984E0077E0B4 /* internal */ = {
 			isa = PBXGroup;
 			children = (
-				6F3019EE1D53CB450077E0B4 /* network */,
 				6F3019DA1D53C1540077E0B4 /* cache */,
+				6F3019EE1D53CB450077E0B4 /* network */,
 				6F3019CD1D5398680077E0B4 /* RSLinksFetcher.h */,
 				6F3019CE1D5398680077E0B4 /* RSLinksFetcher.m */,
 				6F3019FC1D549D040077E0B4 /* RSProtocols.h */,
 			);
-			name = internal;
+			path = internal;
 			sourceTree = "<group>";
 		};
 		6F3019D51D539CA00077E0B4 /* configuration */ = {
 			isa = PBXGroup;
 			children = (
-				6F3019C91D53963F0077E0B4 /* RSSearchConfiguration.h */,
-				6F3019D31D539A750077E0B4 /* RSSearchConfiguration.m */,
 				6F3019EB1D53CADF0077E0B4 /* RSConfigurationValidator.h */,
 				6F3019EC1D53CADF0077E0B4 /* RSConfigurationValidator.m */,
+				6F3019C91D53963F0077E0B4 /* RSSearchConfiguration.h */,
+				6F3019D31D539A750077E0B4 /* RSSearchConfiguration.m */,
 			);
-			name = configuration;
+			path = configuration;
 			sourceTree = "<group>";
 		};
 		6F3019DA1D53C1540077E0B4 /* cache */ = {
@@ -202,7 +202,7 @@
 				6F6674381D54C6D600066F93 /* RSCacheFactory.h */,
 				6F6674391D54C6D600066F93 /* RSCacheFactory.m */,
 			);
-			name = cache;
+			path = cache;
 			sourceTree = "<group>";
 		};
 		6F3019E11D53C1E20077E0B4 /* model */ = {
@@ -211,31 +211,31 @@
 				6F3019E21D53C1F00077E0B4 /* RSLink.h */,
 				6F3019E31D53C1F00077E0B4 /* RSLink.m */,
 			);
-			name = model;
+			path = model;
 			sourceTree = "<group>";
 		};
 		6F3019EE1D53CB450077E0B4 /* network */ = {
 			isa = PBXGroup;
 			children = (
-				6F301A081D54A5340077E0B4 /* url */,
 				6F3019F81D5496520077E0B4 /* serializers */,
+				6F301A081D54A5340077E0B4 /* url */,
 				6F3019EF1D53CB530077E0B4 /* RSApiClient.h */,
 				6F3019F01D53CB530077E0B4 /* RSApiClient.m */,
 				6F3019F21D548AF30077E0B4 /* RSLinksNetworkFetcher.h */,
 				6F3019F31D548AF30077E0B4 /* RSLinksNetworkFetcher.m */,
 			);
-			name = network;
+			path = network;
 			sourceTree = "<group>";
 		};
 		6F3019F81D5496520077E0B4 /* serializers */ = {
 			isa = PBXGroup;
 			children = (
-				6F3019FE1D549DAC0077E0B4 /* RSStandartLinksSerializer.h */,
-				6F3019FF1D549DAC0077E0B4 /* RSStandartLinksSerializer.m */,
 				6F6674351D54C51F00066F93 /* RSSerializerFactory.h */,
 				6F6674361D54C51F00066F93 /* RSSerializerFactory.m */,
+				6F3019FE1D549DAC0077E0B4 /* RSStandartLinksSerializer.h */,
+				6F3019FF1D549DAC0077E0B4 /* RSStandartLinksSerializer.m */,
 			);
-			name = serializers;
+			path = serializers;
 			sourceTree = "<group>";
 		};
 		6F301A011D549E620077E0B4 /* categories */ = {
@@ -244,7 +244,7 @@
 				6F301A051D549F090077E0B4 /* NSArray+Map.h */,
 				6F301A061D549F090077E0B4 /* NSArray+Map.m */,
 			);
-			name = categories;
+			path = categories;
 			sourceTree = "<group>";
 		};
 		6F301A081D54A5340077E0B4 /* url */ = {
@@ -255,7 +255,7 @@
 				6F6674321D54C48600066F93 /* RSURLProviderFactory.h */,
 				6F6674331D54C48600066F93 /* RSURLProviderFactory.m */,
 			);
-			name = url;
+			path = url;
 			sourceTree = "<group>";
 		};
 		6F66743E1D54C8CD00066F93 /* runtime */ = {
@@ -264,7 +264,7 @@
 				6F3019DB1D53C16B0077E0B4 /* RSRuntimeLinksCache.h */,
 				6F3019DC1D53C16B0077E0B4 /* RSRuntimeLinksCache.m */,
 			);
-			name = runtime;
+			path = runtime;
 			sourceTree = "<group>";
 		};
 		CB0F387CCA5C45FE25513552 /* Pods */ = {
@@ -591,7 +591,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = RedditSDKTests/Info.plist;
+				INFOPLIST_FILE = "RedditSDKTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.coddingchallenge.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -606,7 +606,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = RedditSDKTests/Info.plist;
+				INFOPLIST_FILE = "RedditSDKTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.coddingchallenge.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
