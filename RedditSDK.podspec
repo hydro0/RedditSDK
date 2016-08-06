@@ -89,7 +89,7 @@ Pod::Spec.new do |s|
   #
 
   s.source_files  = "RedditSDK", "RedditSDK/**/*.{h,m}"
-  s.exclude_files = "RedditSDK/internal"
+  # s.exclude_files = "RedditSDK/internal"
 
   # s.public_header_files = "Classes/**/*.h"
 
