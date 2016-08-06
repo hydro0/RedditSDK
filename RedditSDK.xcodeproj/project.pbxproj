@@ -23,6 +23,8 @@
 		6F6674341D54C48600066F93 /* RSURLProviderFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6674331D54C48600066F93 /* RSURLProviderFactory.m */; };
 		6F6674371D54C51F00066F93 /* RSSerializerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6674361D54C51F00066F93 /* RSSerializerFactory.m */; };
 		6F66743A1D54C6D600066F93 /* RSCacheFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6674391D54C6D600066F93 /* RSCacheFactory.m */; };
+		75E855FE2EBA8B2E7B4C7A12 /* libPods-RedditSDKTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5F15AD4239AD8909386B56F /* libPods-RedditSDKTests.a */; };
+		76117AD1354C0E1C0830B7D0 /* libPods-RedditSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE2E61682DCCF54716CF65E /* libPods-RedditSDK.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		13485B80AE186B8BE44E4429 /* Pods-RedditSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedditSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RedditSDK/Pods-RedditSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		2E5F38144625381175808F99 /* Pods-RedditSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedditSDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-RedditSDK/Pods-RedditSDK.release.xcconfig"; sourceTree = "<group>"; };
+		66A618629E863969564BEB89 /* Pods-RedditSDKTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedditSDKTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RedditSDKTests/Pods-RedditSDKTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6F2150571D5360C0004C4E7D /* libRedditSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRedditSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F21505A1D5360C0004C4E7D /* RSInstance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSInstance.h; sourceTree = "<group>"; };
 		6F21505C1D5360C0004C4E7D /* RSInstance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSInstance.m; sourceTree = "<group>"; };
@@ -75,13 +80,16 @@
 		6F301A061D549F090077E0B4 /* NSArray+Map.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Map.m"; sourceTree = "<group>"; };
 		6F301A091D54A5630077E0B4 /* RSRedditURLProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSRedditURLProvider.h; sourceTree = "<group>"; };
 		6F301A0A1D54A5630077E0B4 /* RSRedditURLProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSRedditURLProvider.m; sourceTree = "<group>"; };
-		6F66742E1D54B43500066F93 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		6F6674321D54C48600066F93 /* RSURLProviderFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSURLProviderFactory.h; sourceTree = "<group>"; };
 		6F6674331D54C48600066F93 /* RSURLProviderFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSURLProviderFactory.m; sourceTree = "<group>"; };
 		6F6674351D54C51F00066F93 /* RSSerializerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSerializerFactory.h; sourceTree = "<group>"; };
 		6F6674361D54C51F00066F93 /* RSSerializerFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSerializerFactory.m; sourceTree = "<group>"; };
 		6F6674381D54C6D600066F93 /* RSCacheFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCacheFactory.h; sourceTree = "<group>"; };
 		6F6674391D54C6D600066F93 /* RSCacheFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCacheFactory.m; sourceTree = "<group>"; };
+		6F66743F1D54EA5500066F93 /* RedditSDK.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RedditSDK.podspec; sourceTree = "<group>"; };
+		9AD0B06EDA2D6EC4EA1D3BD6 /* Pods-RedditSDKTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedditSDKTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RedditSDKTests/Pods-RedditSDKTests.release.xcconfig"; sourceTree = "<group>"; };
+		ABE2E61682DCCF54716CF65E /* libPods-RedditSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RedditSDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5F15AD4239AD8909386B56F /* libPods-RedditSDKTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RedditSDKTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76117AD1354C0E1C0830B7D0 /* libPods-RedditSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,19 +106,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F2150631D5360C0004C4E7D /* libRedditSDK.a in Frameworks */,
+				75E855FE2EBA8B2E7B4C7A12 /* libPods-RedditSDKTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		305C12873CD24ADFBA321FAA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABE2E61682DCCF54716CF65E /* libPods-RedditSDK.a */,
+				F5F15AD4239AD8909386B56F /* libPods-RedditSDKTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6F21504E1D5360C0004C4E7D = {
 			isa = PBXGroup;
 			children = (
-				6F66742E1D54B43500066F93 /* Podfile */,
+				6F66743F1D54EA5500066F93 /* RedditSDK.podspec */,
 				6F2150591D5360C0004C4E7D /* RedditSDK */,
 				6F2150661D5360C0004C4E7D /* RedditSDKTests */,
 				6F2150581D5360C0004C4E7D /* Products */,
+				CB0F387CCA5C45FE25513552 /* Pods */,
+				305C12873CD24ADFBA321FAA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -246,6 +267,17 @@
 			name = runtime;
 			sourceTree = "<group>";
 		};
+		CB0F387CCA5C45FE25513552 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				13485B80AE186B8BE44E4429 /* Pods-RedditSDK.debug.xcconfig */,
+				2E5F38144625381175808F99 /* Pods-RedditSDK.release.xcconfig */,
+				66A618629E863969564BEB89 /* Pods-RedditSDKTests.debug.xcconfig */,
+				9AD0B06EDA2D6EC4EA1D3BD6 /* Pods-RedditSDKTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -253,9 +285,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6F21506B1D5360C0004C4E7D /* Build configuration list for PBXNativeTarget "RedditSDK" */;
 			buildPhases = (
+				E66BD315B789011A3B160AD0 /* [CP] Check Pods Manifest.lock */,
 				6F2150531D5360C0004C4E7D /* Sources */,
 				6F2150541D5360C0004C4E7D /* Frameworks */,
 				6F2150551D5360C0004C4E7D /* CopyFiles */,
+				A6350CED9210BED6F3F06F4B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -270,9 +304,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6F21506E1D5360C0004C4E7D /* Build configuration list for PBXNativeTarget "RedditSDKTests" */;
 			buildPhases = (
+				1C0DC848436543CCA336DE54 /* [CP] Check Pods Manifest.lock */,
 				6F21505E1D5360C0004C4E7D /* Sources */,
 				6F21505F1D5360C0004C4E7D /* Frameworks */,
 				6F2150601D5360C0004C4E7D /* Resources */,
+				31E98789261C9CAF1052F630 /* [CP] Embed Pods Frameworks */,
+				F15299C16C37A36BEA0631D1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -328,6 +365,84 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C0DC848436543CCA336DE54 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		31E98789261C9CAF1052F630 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RedditSDKTests/Pods-RedditSDKTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6350CED9210BED6F3F06F4B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RedditSDK/Pods-RedditSDK-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E66BD315B789011A3B160AD0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F15299C16C37A36BEA0631D1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RedditSDKTests/Pods-RedditSDKTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6F2150531D5360C0004C4E7D /* Sources */ = {
@@ -446,6 +561,7 @@
 		};
 		6F21506C1D5360C0004C4E7D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13485B80AE186B8BE44E4429 /* Pods-RedditSDK.debug.xcconfig */;
 			buildSettings = {
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -455,6 +571,7 @@
 		};
 		6F21506D1D5360C0004C4E7D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E5F38144625381175808F99 /* Pods-RedditSDK.release.xcconfig */;
 			buildSettings = {
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -464,6 +581,7 @@
 		};
 		6F21506F1D5360C0004C4E7D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66A618629E863969564BEB89 /* Pods-RedditSDKTests.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -482,6 +600,7 @@
 		};
 		6F2150701D5360C0004C4E7D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AD0B06EDA2D6EC4EA1D3BD6 /* Pods-RedditSDKTests.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
