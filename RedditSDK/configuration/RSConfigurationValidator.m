@@ -12,18 +12,23 @@
 
 + (BOOL)validateConfiguration:(RSSearchConfiguration *)configuration withError:(NSError **)error {
     if (configuration.limit > 100 || configuration.limit < 0) {
-        *error = [NSError errorWithDomain:@"configuration" code:-1 userInfo:@{@"error":@"Limit should be (0, 100)"}];
-        return NO;
+        return [self setError:@"Limit should be (0, 100)" withErrorRef:error];
     }
     if (configuration.batchNumber < -1) {
-        *error = [NSError errorWithDomain:@"configuration" code:-1 userInfo:@{@"error":@"batch number should be equal or greater then 0 or be equal to constant RSBatchNumberTopItems"}];
-        return NO;
+        return [self setError:@"batch number should be equal or greater then 0 or be equal to constant RSBatchNumberTopItems" withErrorRef:error];
     }
     if (configuration.query.length == 0) {
-        *error = [NSError errorWithDomain:@"configuration" code:-1 userInfo:@{@"error":@"Query should not be empty"}];
-        return NO;
+        return [self setError:@"Query should not be empty" withErrorRef:error];
     }
+    
     return YES;
+}
+
++ (BOOL)setError:(NSString *)error withErrorRef:(NSError **)errorRef {
+    if (errorRef) {
+        *errorRef = [NSError errorWithDomain:@"configuration" code:-1 userInfo:@{@"error":error}];
+    }
+    return NO;
 }
 
 @end

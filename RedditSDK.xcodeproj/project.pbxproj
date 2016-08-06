@@ -23,6 +23,9 @@
 		6F6674341D54C48600066F93 /* RSURLProviderFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6674331D54C48600066F93 /* RSURLProviderFactory.m */; };
 		6F6674371D54C51F00066F93 /* RSSerializerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6674361D54C51F00066F93 /* RSSerializerFactory.m */; };
 		6F66743A1D54C6D600066F93 /* RSCacheFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6674391D54C6D600066F93 /* RSCacheFactory.m */; };
+		6FB9A13E1D557866006E46CC /* LinkSerializerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB9A13D1D557866006E46CC /* LinkSerializerTest.m */; };
+		6FB9A1401D558152006E46CC /* ConfigurationValidatorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB9A13F1D558152006E46CC /* ConfigurationValidatorTest.m */; };
+		6FB9A1421D558985006E46CC /* APIClientTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB9A1411D558985006E46CC /* APIClientTest.m */; };
 		75E855FE2EBA8B2E7B4C7A12 /* libPods-RedditSDKTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5F15AD4239AD8909386B56F /* libPods-RedditSDKTests.a */; };
 		76117AD1354C0E1C0830B7D0 /* libPods-RedditSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE2E61682DCCF54716CF65E /* libPods-RedditSDK.a */; };
 /* End PBXBuildFile section */
@@ -87,6 +90,9 @@
 		6F6674381D54C6D600066F93 /* RSCacheFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCacheFactory.h; sourceTree = "<group>"; };
 		6F6674391D54C6D600066F93 /* RSCacheFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCacheFactory.m; sourceTree = "<group>"; };
 		6F66743F1D54EA5500066F93 /* RedditSDK.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RedditSDK.podspec; sourceTree = "<group>"; };
+		6FB9A13D1D557866006E46CC /* LinkSerializerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkSerializerTest.m; sourceTree = "<group>"; };
+		6FB9A13F1D558152006E46CC /* ConfigurationValidatorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigurationValidatorTest.m; sourceTree = "<group>"; };
+		6FB9A1411D558985006E46CC /* APIClientTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIClientTest.m; sourceTree = "<group>"; };
 		9AD0B06EDA2D6EC4EA1D3BD6 /* Pods-RedditSDKTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedditSDKTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RedditSDKTests/Pods-RedditSDKTests.release.xcconfig"; sourceTree = "<group>"; };
 		ABE2E61682DCCF54716CF65E /* libPods-RedditSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RedditSDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5F15AD4239AD8909386B56F /* libPods-RedditSDKTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RedditSDKTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -160,6 +166,9 @@
 			isa = PBXGroup;
 			children = (
 				6F2150671D5360C0004C4E7D /* Supporting Files */,
+				6FB9A13D1D557866006E46CC /* LinkSerializerTest.m */,
+				6FB9A13F1D558152006E46CC /* ConfigurationValidatorTest.m */,
+				6FB9A1411D558985006E46CC /* APIClientTest.m */,
 			);
 			path = RedditSDKTests;
 			sourceTree = "<group>";
@@ -470,6 +479,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FB9A13E1D557866006E46CC /* LinkSerializerTest.m in Sources */,
+				6FB9A1401D558152006E46CC /* ConfigurationValidatorTest.m in Sources */,
+				6FB9A1421D558985006E46CC /* APIClientTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

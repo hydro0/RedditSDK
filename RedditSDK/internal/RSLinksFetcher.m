@@ -31,12 +31,12 @@
 }
 
 - (void)fetchLinksWithConfiguration:(RSSearchConfiguration *)configuration andCallback:(RSCallback)callback {
-    __weak RSLinksFetcher *weakSelf = self;
-    
     if (configuration.isTopItemsOnly) {
         [self fetchFromAPIWithConfiguration:configuration andCallback:callback];
         return;
     }
+    
+    __weak RSLinksFetcher *weakSelf = self;
     [self.cache getCachedLinksForConfiguration:configuration withCallback:^(NSArray<RSLink *> *cached) {
         if (cached.count > 0) {
             callback(cached, nil);
