@@ -18,7 +18,7 @@
     NSArray<NSDictionary *> *children = response[@"data"][@"children"];
     
     return [children mapObjectsUsingBlock:^id(NSDictionary *obj, NSUInteger idx) {
-        return [RSLink linkWithDictionary:obj];
+        return [RSLink linkWithDictionary:obj[@"data"]];
     }];
 }
 @end

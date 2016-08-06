@@ -24,11 +24,12 @@
 }
 
 - (NSMutableArray<RSLink *> *)cacheForQuery:(NSString *)query {
-    NSMutableArray<RSLink *> *cache = [self.cache objectForKey:query];
+    NSMutableArray<RSLink *> *cache = [self.cache objectForKey:[query lowercaseString]];
     if (cache) {
         return cache;
     }
-    return cache = [NSMutableArray new];
+    [self.cache setObject:cache = [NSMutableArray new] forKey:[query lowercaseString]];
+    return cache;
 }
 
 - (void)addToStartOfCache:(NSArray<RSLink *> *)links forConfiguration:(RSSearchConfiguration *)configuration {
@@ -40,9 +41,16 @@
 
 - (void)getCachedLinksForConfiguration:(RSSearchConfiguration *)configuration withCallback:(RSCacheCallback)callback {
     NSArray<RSLink *> *cache = [self cacheForQuery:configuration.query];
-    NSArray<RSLink *> *requested = [cache subarrayWithRange:NSMakeRange(configuration.batchNumber * configuration.limit, configuration.limit)];
+    NSInteger loc = configuration.batchNumber * configuration.limit;
+    NSInteger len = configuration.limit;
     
-    callback(requested);
+    if (cache.count <= loc) {
+        callback(nil);
+    } else {
+        len = MIN(len, cache.count - loc);
+        NSArray<RSLink *> *requested = [cache subarrayWithRange:NSMakeRange(loc, len)];
+        callback(requested);
+    }
 }
 
 - (void)getFirstAndLastForConfiguration:(RSSearchConfiguration *)configuration withCallback:(RSCacheCallback)callback {

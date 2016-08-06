@@ -41,7 +41,7 @@ static NSString *const RSJSONExtension = @".json";
 }
 
 - (NSString *)queryStringFromConfiguration:(RSSearchConfiguration *)configuration {
-    NSMutableString *query = [NSMutableString stringWithFormat:@"%@=%@", @"query", configuration.query];
+    NSMutableString *query = [NSMutableString stringWithFormat:@"%@=%@", @"q", configuration.query];
     if (configuration.limit != 0) {
         [query appendString:[NSString stringWithFormat:@"&%@=%ld", @"limit", configuration.limit]];
     }

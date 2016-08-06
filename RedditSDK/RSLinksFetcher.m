@@ -11,9 +11,9 @@
 
 @interface RSLinksFetcher ()
 
-
 @property (strong, nonatomic) RSLinksNetworkFetcher *networkFetcher;
 @property (strong, nonatomic) id<RSLinksCache> cache;
+
 @end
 
 @implementation RSLinksFetcher

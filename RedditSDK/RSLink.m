@@ -20,7 +20,8 @@ static NSString *const RSRedditLinkPrefix = @"t3";
     if (self = [super init]) {
         _idx = dictionary[@"id"];
         _title = dictionary[@"title"];
-        _createdAt = [NSDate dateWithTimeIntervalSince1970:[dictionary[@"created"] longValue]];
+        _createdAt = dictionary[@"created"] ? [NSDate dateWithTimeIntervalSince1970:[dictionary[@"created"] longValue]] : nil;
+        _thumbnailURL = dictionary[@"thumbnail"];
     }
     return self;
 }

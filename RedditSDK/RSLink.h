@@ -13,6 +13,7 @@
 @property (readonly, strong, nonatomic) NSString *idx;
 @property (readonly, strong, nonatomic) NSString *title;
 @property (readonly, strong, nonatomic) NSDate *createdAt;
+@property (readonly, strong, nonatomic) NSString *thumbnailURL;
 @property (readonly, strong, nonatomic) NSString *fullName;
 
 + (instancetype)linkWithDictionary:(NSDictionary *)dictionary;
